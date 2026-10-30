@@ -1,0 +1,59 @@
+# Rebuild the contribution graph and the snake animation shown in the README.
+#
+# Both SVGs are published to the `output` branch, not committed to main. A
+# refresh commit on main would count as a contribution on the profile (and make
+# the next day's graph change, so it would run forever) and would add a bot to
+# the contributors list. The output branch is force-pushed as a single commit,
+# so it never grows history.
+name: Profile graphs
+
+on:
+  schedule:
+    # 01:30 UTC daily (07:00 IST). Cron on GitHub Actions is best-effort.
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_contribution_graph.py"
+      - ".github/workflows/profile-graphs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-graphs
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # actions are pinned to commit SHAs; the tag is in the comment
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Build the contribution graph
+        env:
+          # The default token can read the public contributions calendar of the
+          # user who owns this repository, which is all the script needs.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python3 scripts/build_contribution_graph.py "${{ github.repository_owner }}" dist/contributions.svg
+
+      - name: Draw the snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=#c4b5fd&color_dots=#1a1433,#3b2a73,#5b3fb5,#8b5cf6,#c4b5fd
+
+      - name: Publish to the output branch
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "chore: refresh profile graphs"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output

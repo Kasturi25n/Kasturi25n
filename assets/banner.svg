@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" role="img" aria-label="N V Kasturi, Backend and Full-Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07060d"/>
+      <stop offset="0.55" stop-color="#120a26"/>
+      <stop offset="1" stop-color="#241250"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#8b5cf6" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="clip"><rect width="900" height="280" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="900" height="280" fill="url(#bg)"/>
+    <rect width="900" height="280" fill="url(#grid)"/>
+    <rect width="900" height="280" fill="url(#glow)"/>
+
+    <!-- circuit traces -->
+    <g fill="none" stroke="#8b5cf6" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M0 238 H70 L92 260 H210"/>
+      <path d="M0 262 H40 L58 244 H150"/>
+      <path d="M420 0 V34 L440 54 H520"/>
+      <path d="M470 280 V236 L490 216 H540"/>
+      <path d="M900 120 H880 L862 138 H830"/>
+    </g>
+    <g fill="#c4b5fd">
+      <circle cx="210" cy="260" r="3.5"/><circle cx="150" cy="244" r="3.5"/>
+      <circle cx="520" cy="54" r="3.5"/><circle cx="540" cy="216" r="3.5"/>
+      <circle cx="830" cy="138" r="3.5"/>
+    </g>
+    <g fill="#a78bfa" filter="url(#blur)" opacity="0.9">
+      <circle cx="210" cy="260" r="5"/><circle cx="520" cy="54" r="5"/><circle cx="830" cy="138" r="5"/>
+    </g>
+
+    <!-- left: intro -->
+    <text x="56" y="62" font-family="'SF Mono','Fira Code',Menlo,Consolas,monospace" font-size="15" fill="#a78bfa">~/kasturi <tspan fill="#67e8f9">$</tspan> whoami<tspan fill="#c4b5fd">_</tspan></text>
+    <text x="54" y="128" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="url(#name)" letter-spacing="0.5">N V Kasturi</text>
+    <text x="56" y="168" font-family="'SF Mono','Fira Code',Menlo,Consolas,monospace" font-size="19" fill="#c4b5fd">Backend &amp; Full-Stack Developer</text>
+    <rect x="56" y="196" width="156" height="30" rx="15" fill="#8b5cf6" fill-opacity="0.14" stroke="#8b5cf6" stroke-opacity="0.6"/>
+    <text x="134" y="216" text-anchor="middle" font-family="'SF Mono','Fira Code',Menlo,Consolas,monospace" font-size="13" fill="#ddd6fe">B.Tech CSE · GITAM</text>
+    <rect x="224" y="196" width="176" height="30" rx="15" fill="#8b5cf6" fill-opacity="0.14" stroke="#8b5cf6" stroke-opacity="0.6"/>
+    <text x="312" y="216" text-anchor="middle" font-family="'SF Mono','Fira Code',Menlo,Consolas,monospace" font-size="13" fill="#ddd6fe">Visakhapatnam, IN</text>
+
+    <!-- right: code window -->
+    <rect x="566" y="52" width="296" height="176" rx="12" fill="#0b0816" fill-opacity="0.9" stroke="#5b3fb5" stroke-width="1.2"/>
+    <path d="M566 64a12 12 0 0 1 12-12h272a12 12 0 0 1 12 12v18H566z" fill="#1a1236"/>
+    <circle cx="586" cy="67" r="4.5" fill="#6d4fd1"/><circle cx="603" cy="67" r="4.5" fill="#8b5cf6"/><circle cx="620" cy="67" r="4.5" fill="#c4b5fd"/>
+    <g font-family="'SF Mono','Fira Code',Menlo,Consolas,monospace" font-size="13.5">
+      <text x="584" y="108" fill="#a78bfa">const <tspan fill="#e9e5ff">dev</tspan> <tspan fill="#67e8f9">=</tspan> {</text>
+      <text x="602" y="130" fill="#8b87a8">name<tspan fill="#67e8f9">:</tspan> <tspan fill="#c4b5fd">"N V Kasturi"</tspan>,</text>
+      <text x="602" y="152" fill="#8b87a8">stack<tspan fill="#67e8f9">:</tspan> <tspan fill="#c4b5fd">["TS","Node","PG"]</tspan>,</text>
+      <text x="602" y="174" fill="#8b87a8">focus<tspan fill="#67e8f9">:</tspan> <tspan fill="#c4b5fd">"APIs"</tspan>,</text>
+      <text x="602" y="196" fill="#8b87a8">status<tspan fill="#67e8f9">:</tspan> <tspan fill="#c4b5fd">"building"</tspan></text>
+      <text x="584" y="218" fill="#a78bfa">};</text>
+    </g>
+  </g>
+  <rect x="0.75" y="0.75" width="898.5" height="278.5" rx="21.5" fill="none" stroke="#8b5cf6" stroke-opacity="0.35"/>
+</svg>
