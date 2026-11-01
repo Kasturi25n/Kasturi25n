@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/nvkasturi"><img src="https://img.shields.io/badge/-LinkedIn-6d4aff?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:nvkasturi25@gmail.com"><img src="https://img.shields.io/badge/-Email-9b6dff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:nvkasturi4@gmail.com"><img src="https://img.shields.io/badge/-Email-9b6dff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/Kasturi25n"><img src="https://img.shields.io/badge/-GitHub-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
