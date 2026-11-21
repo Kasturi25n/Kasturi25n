@@ -33,11 +33,10 @@ Hi, I'm Kasturi 👋 I'm a B.Tech CSE (Core) student at **GITAM School of Techno
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**ShrinkLink**](https://github.com/Kasturi25n/shrinklink) ([live](https://shrinklink-app.vercel.app)) | URL shortener with click analytics: JWT auth, Redis-cached redirects, per-IP rate limiting, and a web dashboard with referrer, browser, device and country breakdowns | FastAPI, PostgreSQL, Redis, Alembic, Docker, Vercel, Render |
+| [**Streakly**](https://github.com/Kasturi25n/streakly) ([live](https://streakly-sooty.vercel.app)) | Habit and goal tracker: daily check-ins with time-zone-aware streaks (rest days never break one), measurable goals and a year-in-pixels heatmap | React 19, Express 5, MongoDB Atlas, JWT, Vercel |
+| [**Expense Tracker**](https://github.com/Kasturi25n/Expense-tracker) | Multi-user expense tracker for Indian users: cash, UPI and card accounts, budgets, savings goals, recurring items, bank statement import and spending insights | React, Express, SQLite, JWT |
 | [**KAPS MedTech**](https://github.com/Kasturi25n/kaps-medtech) | Healthcare management system with automated scheduling and RBAC between Doctor and Student roles; prototype deployed within 24 hours at Gitathon | Node.js, PostgreSQL, RBAC |
-| [**TripSync**](https://github.com/Kasturi25n/Trip_Sync) | Travel coordination platform with a scalable REST API for authentication and real-time itinerary data; built for the SIH 2025 internal round in 24 hours | Node.js, Express.js, REST APIs |
-| [**Fake Social Media Account Detection**](https://github.com/pushpam2404/fake_acc) | Multi-dataset pipeline with feature engineering and an XGBoost classifier, with SHAP for explainability; cleared the SIH 2026 internal round | Python, XGBoost, SHAP |
-| [**Streakly**](https://github.com/Kasturi25n/streakly) | Full-stack habit and goal tracker deployed on Vercel | React 19, Express 5, MongoDB Atlas |
-| [**Expense Tracker**](https://github.com/Kasturi25n/Expense-tracker) | Expense tracker for Indian users: income, expenses, accounts, budgets and insights | |
 
 <img src="https://raw.githubusercontent.com/Kasturi25n/Kasturi25n/main/assets/divider.svg" width="100%" alt="" />
 
