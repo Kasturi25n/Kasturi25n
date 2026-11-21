@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the contribution graph as an SVG in the profile's purple palette.
+"""Render the contribution graph as an SVG in the profile's plum and orchid palette.
 
 GitHub's own graph cannot be recoloured and the hosted graph image services
 either hardcode their colours or run out of quota, so the graph is generated
@@ -18,17 +18,17 @@ import urllib.error
 import urllib.request
 from datetime import date
 
-BG = "#0b0816"
-BORDER = "#8b5cf6"
-TEXT = "#e9e5ff"
-MUTED = "#8b87a8"
-EMPTY = "#1a1433"
+BG = "#12041a"
+BORDER = "#c774b2"
+TEXT = "#f4d5e0"
+MUTED = "#b08aa6"
+EMPTY = "#2a1030"
 LEVELS = {
     "NONE": EMPTY,
-    "FIRST_QUARTILE": "#3b2a73",
-    "SECOND_QUARTILE": "#5b3fb5",
-    "THIRD_QUARTILE": "#8b5cf6",
-    "FOURTH_QUARTILE": "#c4b5fd",
+    "FIRST_QUARTILE": "#6a2a72",
+    "SECOND_QUARTILE": "#94408f",
+    "THIRD_QUARTILE": "#c774b2",
+    "FOURTH_QUARTILE": "#f4d5e0",
 }
 FONT = "'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif"
 
